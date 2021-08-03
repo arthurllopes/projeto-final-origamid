@@ -1,0 +1,9 @@
+.numeros-grid{
+    display: grid;
+    grid-column: 2/4;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+[data-numero]{
+    color: brown;
+}

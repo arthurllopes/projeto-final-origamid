@@ -1,0 +1,56 @@
+[data-menu="button"]{
+    display: none;
+}
+@media (max-width: 700px){
+    [data-menu="button"]{
+        display: block;
+        cursor: pointer;
+        border: none;
+        display: flex;
+        padding: 5px;
+        background-color: #FB5;
+    }
+    [data-menu="button"]::before{
+        content: '';
+        font-weight: bold;
+        display: inline-block;
+        height: 4px;
+        width: 24px;
+        box-shadow: 0 8px #fff, 0 -8px #fff ;
+        background-color: #fff;
+        margin: 10px;
+    }
+    [data-menu="list"]{
+        display: none;
+        
+    }
+    [data-menu="list"].ativo{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 30px;
+        background: #FB5;
+        z-index: 300;
+        padding: 5px;
+        width: 140px;
+    }
+    .dropdown-menu{
+        position: static;
+        border: none;
+        width: 70%;
+        align-content: center;
+        background: #eee;
+    }
+    .dropdown-menu::before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 28px;
+        right: 45%;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid black;
+    }
+}

@@ -1,0 +1,33 @@
+body, h1,  h2, h3, ul, li, p, dt, dd, dl{
+    margin: 0%;
+    padding: 0%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    padding: 20px;
+}
+ul li{
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+body{
+    background-color: #eee;
+    color: #222;
+}
+header{
+    background-color: #fb5;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+}

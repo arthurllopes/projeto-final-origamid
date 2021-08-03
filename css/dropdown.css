@@ -1,0 +1,25 @@
+[data-dropdown]{
+    position: relative;
+}
+.dropdown-menu{
+    position: absolute;
+    top: 38px;
+    right: 0px;
+    background: #ccc;
+    display: none;
+}
+[data-dropdown].ativo .dropdown-menu{
+    display: block;
+}
+.dropdown-menu::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -5px;
+    right: 45%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+}
